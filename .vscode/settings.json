@@ -2,5 +2,6 @@
     "git.enableSmartCommit": true,
     "git.postCommitCommand": "push",
     "git.autofetch": true,
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "c-cpp-compile-run.c-flags": "-Wall -finput-charset=UTF-8 -fexec-charset=GBK"
 }

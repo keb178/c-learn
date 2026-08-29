@@ -269,11 +269,11 @@ upper=300;
 step=20;
 
 fahr=lower;
-printf("华氏温度：\t摄氏度:\n");
+printf("下面的是华氏温度和摄氏度的转换表（从0华氏温度每隔20到300华氏温度）：\n");
 while(fahr<=upper)
 {
 celsius=(5.0/9.0)*(fahr-32.0);
-printf("%3.1f\t%6.3f\n",fahr,celsius);
+printf("华氏温度：%3.1f\t摄氏度:%6.3f\n",fahr,celsius);
 fahr=fahr+step;
 
 

@@ -9,7 +9,7 @@
 
 ## 日常怎么用这个仓库
 
-1. 写代码 → 按 **F5** 编译运行（黑窗口）
+1. 写代码 → 按 **F8** 编译并运行（用的是扩展 "C/C++ Compile Run"，编码参数已配在 `.vscode/settings.json`；按 F5 走 tasks.json 也一样正常）
 2. 改完一个阶段 → 打开源代码管理面板（`Ctrl+Shift+G`）→ 输入一句话说明 → `Ctrl+Enter` 提交并自动推送 GitHub
 3. exe 等编译产物已被 `.gitignore` 排除，不用管
 
@@ -19,8 +19,8 @@
    `pacman -S mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-gdb`
    再把 `C:\msys64\ucrt64\bin` 加入系统 PATH。
    （用其他 gcc 发行版如 WinLibs、MinGW-w64 也可以，能编译 C 就行。）
-2. **装编辑器**：VS Code + 扩展 "C/C++"（Microsoft 官方，ms-vscode.cpptools）。
-3. **克隆本仓库，用 VS Code 打开整个文件夹**（不是单个文件），对代码按 **F5**，会自动编译并弹出黑窗口运行。
+2. **装编辑器**：VS Code + 扩展 "C/C++"（Microsoft 官方，ms-vscode.cpptools）+ 扩展 "C/C++ Compile Run"（danielpinto8zz6.c-cpp-compile-run，按 F8 编译运行用的就是它）。
+3. **克隆本仓库，用 VS Code 打开整个文件夹**（不是单个文件），对代码按 **F8** 或 **F5**，自动带正确编码参数编译运行。
 
 ## 编码规则（重要！中文乱码就是这么来的）
 
@@ -29,7 +29,7 @@
   ```
   gcc -finput-charset=UTF-8 -fexec-charset=GBK xxx.c -o xxx.exe
   ```
-- 本仓库的 `.vscode/tasks.json` 已经写好这个参数，**按 F5 编译运行会自动带上**，不会乱码。
+- 本仓库的 `.vscode/settings.json`（F8 用的扩展）和 `.vscode/tasks.json`（F5 用的任务）都已写好这个参数，**按 F8 或 F5 编译运行都会自动带上**，不会乱码。
 - 如果手动在终端编译，必须自己带上上面的两个参数，否则中文输出会变成"鍗庢皬娓╁害"这样的乱码。
 
 ## 目录结构
