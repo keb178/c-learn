@@ -256,7 +256,7 @@ fahr=fahr+step;
 }
     return 0;
 
-}*/
+}
 //练习1-3
 #include <stdio.h>
 int main()
@@ -273,7 +273,7 @@ printf("下面的是华氏温度和摄氏度的转换表（从0华氏温度每�
 while(fahr<=upper)
 {
 celsius=(5.0/9.0)*(fahr-32.0);
-printf("华氏温度：%3.1f\t摄氏度:%6.3f\n",fahr,celsius);
+printf("华氏温度：%3.1f\t\t摄氏度:%6.3f\n",fahr,celsius);//这边是华氏温度变摄氏温度
 fahr=fahr+step;
 
 
@@ -282,4 +282,235 @@ fahr=fahr+step;
 
     return 0;
 }
+
+
+
+//练习1-4
+#include <stdio.h>
+int main ()
+{
+float fahr,celsius;
+float lower,upper,step;
+lower=0;
+upper=300;
+step=10;
+celsius=lower;
+printf("下面的是摄氏度和华氏温度的转换表（从0摄氏度每隔10摄氏度到300摄氏度）:\n");
+while(celsius<=upper)
+{
+fahr=(9.0/5.0)*celsius+32;
+printf("摄氏温度：%3.1f\t\t华氏温度:%6.3f\n",celsius,fahr);//这边是摄氏温度变华氏温度
+celsius=celsius+step;
+
+
+
+
+}
+
+    return 0;
+}
+
+
+
+//1.3 for语句
+#include <stdio.h>
+//打印华氏温度-摄氏温度对照表
+int main()
+{
+int fahr;
+
+for(fahr=0;fahr<=300;fahr=fahr+20)
+{
+printf("当前fahr=:%d\n",fahr);
+printf("%3d\t\t%6.1f\n",fahr,(5.0/9.0)*(fahr-32));
+}
+
+
+    return 0;
+}
+//测试
+#include <stdio.h>
+int main()
+{
+float fahr;
+fahr=0;
+
+for(printf("第一次执行\n");fahr<=300;fahr=fahr+20)
+{
+printf("当前fahr=:%f\n",fahr);
+printf("%3.1f\t\t%6.3f\n",fahr,(5.0/9.0)*(fahr-32));
+
+
+
+}
+
+    return 0;
+}
+
+
+
+//练习1-5
+#include <stdio.h>
+int main()
+{
+    float fahr;
+ 
+    //for(fahr=300;fahr<=300;fahr=fahr-20)
+    for(fahr=300;fahr>=0;fahr=fahr-0.1)
+    {
+
+        //printf("当前的华氏温度：%3.1f\t\t当前的摄氏度:%f6.2\n",fahr,(5.0/9.0)*(fahr-32));
+        printf("当前的华氏温度：%3.1f\t\t当前的摄氏度:%6.2f\n",fahr,(5.0/9.0)*(fahr-32));
+    }
+
+
+
+    return 0;
+}
+
+
+
+//1.4符号常量
+#include <stdio.h>
+//#definr LOWER 0   //lower limit of table
+#define LOWER 0 //lower limit of table
+#define UPPER 300 //upper limit
+#define STEP 20 //step size
+//print Fahrenheit-Celsius table
+int main()
+{
+int fahr;
+for (fahr=LOWER;fahr<=UPPER;fahr=fahr+STEP)
+printf("%3d %6.1ff\n",fahr,(5.0/9.0)*(fahr-32));
+
+
+
+    return 0;
+}*/
+
+
+//1.5 字符输入/输出
+/*#include <stdio.h>
+//copy input to output;1st version
+int main()
+{
+int c;
+c=getchar();
+while (c!=EOF)
+{
+putchar(c);
+c=getchar();
+
+}
+
+
+    return 0;
+}
+
+#include <stdio.h>
+int main()
+{
+int c;
+while ((c=getchar())!=EOF)
+putchar(c);
+
+
+    return 0;
+}
+
+
+
+//练习1-6
+#include <stdio.h>
+int main()
+{
+int c;
+c=getchar()!=EOF;
+printf("%d\n",c);
+
+
+    return 0;
+}
+
+
+
+//练习1-7
+#include <stdio.h>
+int main()
+{
+int c=0;
+c=EOF;
+printf("%d\n",c);
+
+
+
+    return 0;
+}
+//测试：
+#include <stdio.h>
+int main()
+{
+int c=0;
+while((c=getchar())!='0')
+{
+
+printf("现在的输入是：%d\n",c);
+
+}
+
+    return 0;
+}
+#include <stdio.h>
+int main()
+{
+    int ch;           // 专门用来存储输入的字符（ASCII码）
+    int is_not_zero;  // 专门用来存储 != 比较的结果（0或1）
+
+    printf("请输入字符（输入字符 0 退出）：\n");
+
+    while (1) {  // 这是一个"无限循环"，我们用 break 来跳出
+        ch = getchar();          // 1. 先读取字符
+
+        // 处理一下换行符，避免打印多余的提示（这是为了显示效果更干净）
+        if (ch == '\n')
+            continue;
+
+        // 2. 再进行判断，把比较结果存到 is_not_zero 里
+        is_not_zero = (ch != '0');   // 注意：这里的括号是必须的！
+
+        // 3. 两个都打印出来！
+        printf("你输入的字符是：'%c' (ASCII码: %d) \t", ch, ch);
+        printf("判断结果 (ch != '0') 是：%d\n", is_not_zero);
+
+        // 4. 如果判断结果是 0（即 ch == '0'），就跳出循环
+        if (is_not_zero == 0) {
+            printf("检测到字符 '0'，程序结束。\n");
+            break;
+        }
+    }
+   
+   
+   int a;
+   printf("%d",a);
+   printf("%c",a);
+   
+    return 0;
+}
+
+
+
+//1.5.2字符计数
+#include <stdio.h>
+int main()
+{
+long nc;
+nc=0;
+while (getchar() !=EOF)
+    ++nc;
+    printf("%ld\n",nc);
+
+    return 0;
+}*/
+
+
 
