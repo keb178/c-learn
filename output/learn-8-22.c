@@ -1,4 +1,4 @@
-#include <stdio.h>
+//#include <stdio.h>
 /*int main()
 {
 printf("Hello,world!\n");
@@ -20,9 +20,9 @@ int main()
 int main()
 {
     printf("Hello world!\n");
-    //""Ë«ÒıºÅÀïÃæµÄÄÚÈİ½Ğ×ö×Ö·û´®£¬printf»á¸ºÔğ½«ÀïÃæµÄÄÚÈİ¸øÔ­·â²»¶¯µÄ¸ø´òÓ¡³öÀ´£»\nÊÇ»»ĞĞ·û£¬±íÊ¾ÒªÔÚÇ°ÃæµÄÊä³ö½á¹ûµÄºóÃæ»»ĞĞ
-    //ËùÒÔËµÉÏÃæµÄÕâÒ»´®´úÂëµÄÒâË¼¾ÍÊÇ×Ö·û´®"Hello world"±»printf¸ø´òÓ¡ÁË³öÀ´
-    printf("ÄãºÃ\n");
+    //""åŒå¼•å·é‡Œé¢çš„å†…å®¹å«åšå­—ç¬¦ä¸²ï¼Œprintfä¼šæŠŠé‡Œé¢çš„å†…å®¹åŸå°ä¸åŠ¨åœ°æ‰“å°å‡ºæ¥ã€‚\næ˜¯æ¢è¡Œç¬¦ï¼Œè¡¨ç¤ºè¾“å‡ºæ—¶åœ¨è¿™é‡Œæ›¿æ¢æˆæ¢è¡Œ
+    //è¿™å°±è¯´æ˜äº†å­—ç¬¦ä¸²æ˜¯ä¸€ä¸ªæ•´ä½“ï¼šå­—ç¬¦ä¸²"Hello world"è¢«printfåŸæ ·æ‰“å°è¾“å‡º
+    printf("ä½ å¥½\n"); // æ³¨ï¼šæœ¬è¡ŒåŸå†…å®¹å·²æŸåä¸¢å¤±ï¼Œæ­¤ä¸ºæŒ‰ä¸Šä¸‹æ–‡è¡¥å†™
     printf("23+43=%d",23+43);
 
         return 0;
@@ -31,21 +31,21 @@ int main()
  int main()
  {
 int price=0;
-//A-3:¶¨ÒåÒ»¸ö±äÁ¿Ãûprice½«ËüµÄ³õÊ¼ÖµÉèÖÃÎª0£¬ps:(Õâ¸ö±äÁ¿µÄÀàĞÍÎªint)
-printf("ÇëÊäÈë½ğ¶î£¨Ôª£©£º");
-//´òÓ¡³ö×Ö·û´®
+//A-3:å®šä¹‰ä¸€ä¸ªå˜é‡priceï¼Œç»™å‡ºå®ƒçš„åˆå§‹åŒ–å€¼ï¼Œä¸º0ï¼Œps:(å®šä¹‰çš„å˜é‡ç±»å‹ä¸ºint)
+printf("è¯·è¾“å…¥é‡‘é¢ï¼ˆå…ƒï¼‰ï¼š");
+//æ‰“å°æç¤ºå­—ç¬¦ä¸²
 //A-1:scanf("%d,&price");
-//ÊäÈëÄÚÈİµ½priceÉÏ£¬Ïàµ±ÓÚ¸øprice¸³Öµ
-//A-1:ÕÒµ½ÎÊÌâÁË£ºÔÚÕâÀïÎÒ½«&priceÒ²¸øĞ´½øË«ÒıºÅÀïÃæµÄ£¬Õâ¾Íµ¼ÖÂÎŞÂÛÎÒÊäÈëµÄÊÇ¶àÉÙ£¬ÔÚµçÄÔÀïËü¼ÇÂ¼µÄpriceµÄÖµ¶¼ÊÇ0
+//è¯»å–æ•°æ®åˆ°priceé‡Œï¼Œç›¸å½“äºåœ¨ç»™priceèµ‹å€¼
+//A-1:æˆ‘åˆšæ‰çŠ¯é”™äº†ï¼ŒæŠŠ&priceä¹Ÿå†™åˆ°äº†åŒå¼•å·é‡Œé¢ï¼Œå°±ç­‰äºå‘Šè¯‰è®¡ç®—æœºä¸ç®¡è¾“å…¥çš„æ˜¯ä»€ä¹ˆï¼Œéƒ½ä¸ä¼šè®°å½•è¿›priceçš„å€¼ï¼Œpriceè¿˜æ˜¯0
 scanf("%d",&price);
 int change=100-price;
-//ĞÂ¶¨ÒåÒ»¸ö±äÁ¿½Ğ×öchangeÓÃÀ´´æ·ÅÎÒÃÇÒò¸ÃÕÒµÄÇ®
-printf("ÕÒÄú%d(Ôª).\n",change);
-//ÕÒÁãµÄÇ®
-//A-1:³öÏÖÒ»¸öĞÂµÄÎÊÌâ¾ÍÊÇÎªÊ²Ã´µ±ÎÒÃÇÊäÈëµÄpriceµÄÖµÎŞÂÛÎªÊ²Ã´£¬change¶¼ÊÇ100ÁË£¿
-//A-2:ÏÖÔÚµÄÎÊÌâÊÇµ±ÎÒÊäÈëµÄÊÇ´óÓÚ100µÄÊıÊ±£¬change»á¸øÎÒ·µ»ØÒ»¸ö¸ºÖµ£¬ËùÒÔÎÒÏëÄÜ²»ÄÜÓĞÒ»¸ö±È½ÏÏµÍ³À´·Ö±æÎÒÃÇÊäÈëµÄÖµºÍ100µÄ´óĞ¡£¬»òÕßËµ±È½Ï×îºóµÄchangeµÄÖµºÍ0µÄ´óĞ¡
+//å®šä¹‰ä¸€ä¸ªå˜é‡changeï¼Œç”¨æ¥å­˜æ”¾è¦æ‰¾çš„é’±
+printf("æ‰¾ä½ %då…ƒã€‚\n",change);
+//è®¡ç®—æ‰¾é›¶
+//A-1:æå‡ºä¸€ä¸ªæ–°çš„é—®é¢˜ï¼šä¸ºä»€ä¹ˆscanfèƒ½æ”¹å˜priceçš„å€¼ï¼Œå´ä¸èƒ½æ”¹å˜changeé‡Œçš„100ï¼Ÿ
+//A-2:ç°åœ¨çš„ç¨‹åºé‡Œæˆ‘ä»¬çš„å¸¸é‡æ˜¯100ï¼Œå½“æˆ‘ä»¬ä¹°çš„ä¸œè¥¿ä»·æ ¼è¶…è¿‡100æ—¶ï¼Œchangeä¼šå¾—åˆ°ä¸€ä¸ªè´Ÿå€¼ã€‚å¯ä»¥åŠ ä¸€ä¸ªæ¯”è¾ƒï¼Œæ¯”è¾ƒchangeçš„å€¼å’Œ0çš„å¤§å°
     return 0;
-//A-3:ÕâÀï¶¨ÒåµÄÊÇ±äÁ¿int price¶ø²»ÊÇµ¥¶ÀµÄ±äÁ¿Ãûprice£¬±äÁ¿ÊÇÓÉ<±äÁ¿ÀàĞÍ>+<±äÁ¿Ãû³Æ>×é³ÉµÄ
+//A-3:è¿™é‡Œå®šä¹‰äº†å˜é‡int priceï¼Œpriceæ˜¯å˜é‡çš„åå­—ï¼Œå˜é‡æ˜¯ç”±<ç±»å‹åç§°>+<å˜é‡åç§°>ç»„æˆçš„
  }
 
 
@@ -53,22 +53,22 @@ printf("ÕÒÄú%d(Ôª).\n",change);
 
 
 
- //µÚ¶şÖÜ
+ //ç¬¬äºŒç« 
  int main()
  {
     //printf("23+43=%d",23+43);
     int price=0;
-    printf("ÇëÊäÈë½ğ¶î£¨Ôª£©:");
+    printf("è¯·è¾“å…¥é‡‘é¢ï¼ˆå…ƒï¼‰:");
     scanf("%d",&price);
     int change=100-price;
-    printf("ÕÒÄú%dÔª\n",change);
+    printf("æ‰¾ä½ %då…ƒ\n",change);
     return 0;
  }
  
  
  
  // 8/23
- //int main()   bug-4:ÍüÁË½«Ç°ÃæµÄ´úÂë¸ø×¢ÊÍÁË
+ //int main()   bug-4:å¿˜äº†æŠŠå‰é¢çš„ä»£ç éƒ½æ³¨é‡Šæ‰äº†
  int main()
  {
 printf("23+43=%d\n",23+43);
@@ -80,17 +80,17 @@ printf("23+43=%d\n",23+43);
 int main()
 {
 int price=0;
-printf("ÇëÊäÈë½ğ¶î£¨Ôª£©£º");
+printf("è¯·è¾“å…¥é‡‘é¢ï¼ˆå…ƒï¼‰ï¼š");
 scanf("%d",&price);
 int change=100-price;
-printf("ÕÒÄú%dÔª\n",change);
+printf("æ‰¾ä½ %då…ƒ\n",change);
 return 0;
 
 }
 
 int main()
 {
-int i;//   bug-5:ÕâÀïµÄÎÊÌâ¾ÍÊÇ±äÁ¿ÔÚ±»Ê¹ÓÃÖ®Ç°Ã»ÓĞ×ö³õÊ¼»¯
+int i;//   bug-5:è¿™ä¸ªé”™è¯¯åœ¨äºå˜é‡åœ¨ä½¿ç”¨ä¹‹å‰æ²¡æœ‰è¢«åˆå§‹åŒ–
 int j=i;
 printf("j=%d",j);
     return 0;
@@ -99,23 +99,186 @@ printf("j=%d",j);
 
 int main()
 {
-const int AMOUNT=100;// AMOUNT:ÊıÁ¿£¬×Ü¶î»òÕß½ğ¶î
+const int AMOUNT=100;// AMOUNT:å®šé¢ï¼Œèº«ä¸Šå°±è¿™100å—é’±ï¼ˆconstå¸¸é‡ä¸å¯å†ä¿®æ”¹ï¼‰
 int price=0;
 
-printf("ÇëÊäÈë½ğ¶î£¨Ôª£©£º");
+printf("è¯·è¾“å…¥é‡‘é¢ï¼ˆå…ƒï¼‰ï¼š");
 scanf("%d",&price);
 
 int change=AMOUNT-price;
 
-printf("ÕÒÄú%dÔª¡£\n",change);
+printf("æ‰¾ä½ %då…ƒã€‚\n",change);
     return 0;
 }
 
 
-*/
-
-
-//½áÊøÁË£¬½ñÌìµÄ×´Ì¬ºÜ²»ºÃ£¬ÎÒ¾õµÃÊÇÔçÉÏËäÈ»ÆğÀ´ÁËµ«ÊÇ²¢Ã»ÓĞÈ¥Õı³£µÄÈ¥Ñ§Ï°¶øÊÇÈ¥Ë¯¾õµÄÔµ¹Ê
 
 
 
+//ä»Šå¤©çŠ¶æ€å¾ˆä¸å¥½ï¼Œæˆ‘æ„Ÿè§‰èº«ä½“å’Œå¿ƒæ€éƒ½ä¸å¤ªå¯¹ï¼Œä½†æ—¢ç„¶è¿˜æ˜¯æ¥å­¦ä¹ äº†ï¼Œå°±å­¦ä¸€ç‚¹æ˜¯ä¸€ç‚¹ï¼Œæˆ–è€…æ—©ç‚¹ç¡è§‰ï¼Œä¹Ÿæ˜¯å¯ä»¥çš„
+
+
+
+//8-25
+int main()
+{
+int foot;
+int inch;
+scanf("%d %d",&foot,&inch);
+printf("èº«é«˜æ˜¯%fç±³ã€‚\n",(foot+inch/12)*0.3048);
+
+
+
+
+
+    return 0;
+}
+
+
+
+//ç¬¬ä¸€éƒ¨åˆ†ï¼šè·Ÿç€è¯¾ç¨‹å­¦ä¹ 
+//1.1  ç¬¬ä¸€ä¸ªç¨‹åº
+#include <stdio.h>
+int main()
+{
+printf("hello world\n");
+printf("hello world"); 
+printf("hello world");   
+printf("\n\n\n");
+printf("hello,");
+printf("world");
+printf("\n");
+
+
+
+return 0;
+
+}
+//ç»ƒä¹  1-1
+#include <stdio.h>
+int main()
+{
+//printf('hello world\n');
+printf("hello world\n");
+    return 0;
+}
+#include <stdio.h>
+int main()
+{
+//printf("hello world\c");
+printf("hello world\t|\n");
+printf("hello world\b\n");
+printf("hello world\"\n");
+printf("hello world\\");
+
+    return 0;
+}
+
+
+
+//1.2 å˜é‡ä¸ç®—æœ¯è¡¨è¾¾å¼ï¼ˆæ¸©åº¦æ¢ç®—ï¼‰
+
+#include <stdio.h>
+int main()
+{
+int a=0;//åæ°æ¸©åº¦
+int a_1=(5/9)*(a-32);//     bug-6:æ•´æ•°é™¤æ³•     bug-7:è¿ç®—é¡ºåº
+int b=0;//æ‘„æ°æ¸©åº¦
+int b_1=(9/5)*b+32;
+printf("è¯·è¾“å…¥åæ°æ¸©åº¦ï¼š\n");
+scanf("%d",&a);
+printf("è½¬æ¢å¾—åˆ°çš„æ‘„æ°æ¸©åº¦æ˜¯:%d\n",a_1);
+
+printf("è¯·è¾“å…¥æ‘„æ°æ¸©åº¦:\n");
+scanf("%d",&b);
+printf("è½¬æ¢å¾—åˆ°çš„åæ°æ¸©åº¦æ˜¯ï¼š%d\n",b_1);//       bug-8:ç¼ºå°‘å ä½ç¬¦
+
+
+    return 0;
+}
+
+
+
+#include <stdio.h>
+int main()
+{
+int fahr,celsius=0;
+int lower,upper,step=0;
+lower=0;//æ¸©åº¦è¡¨çš„ä¸‹é™
+upper=300;//æ¸©åº¦è¡¨çš„ä¸Šé™
+step=20;
+
+fahr=lower;
+while(fahr<=upper)
+{
+celsius=5*(fahr-32)/9;
+printf("%d\t%d\n",fahr,celsius);
+fahr=fahr+step;
+}
+
+
+
+    return 0;
+}
+#include <stdio.h>
+int main()
+{
+int a=0;
+int b=0;
+while(a<=100)
+{
+b=a+1;
+a=a+1;
+printf("%3d\2t%6d\n",b,a);
+
+
+
+}
+
+
+
+    return 0;
+}
+#include <stdio.h>
+int main()
+{
+float fahr,celsius;
+float lower,upper,step;
+lower=0;
+upper=300;
+step=20;
+fahr=lower;
+while(fahr<=upper)
+{
+celsius=(5.0/9.0)*(fahr-32.0);
+printf("%3.2f %6.6f\n",fahr,celsius);
+fahr=fahr+step;
+}
+    return 0;
+
+}*/
+//ç»ƒä¹ 1-3
+#include <stdio.h>
+int main()
+{
+float fahr,celsius;
+float lower,upper,step;
+
+lower=0;
+upper=300;
+step=20;
+
+fahr=lower;
+printf("åæ°æ¸©åº¦ï¼š\tæ‘„æ°åº¦:\n");
+while(fahr<=upper)
+{
+celsius=(5.0/9.0)*(fahr-32.0);
+printf("%3.1f\t%6.3f\n",fahr,celsius);
+fahr=fahr+step;
+
+
+
+}
+
+    return 0;
+}

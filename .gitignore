@@ -1,0 +1,10 @@
+# 编译产物（不进仓库，几年后重新编译即可）
+*.exe
+*.o
+*.obj
+*.out
+
+# 编辑器/系统杂项
+exeout.txt
+*.bak
+.vscode/ipch/
