@@ -618,7 +618,7 @@ printf("\n总共输入了%ld个字符。\n",nc);
 
 
 //1.5.3 行计数
-#include <stdio.h>
+/*#include <stdio.h>
 int main(){
     int c,nl;
     nl=0;
@@ -626,5 +626,42 @@ int main(){
     if (c=='\n')
     ++nl;
     printf("%d\n",nl);
+    return 0;
+}*/
+
+
+
+//练习1-8：
+#include <stdio.h>
+int main(){
+    int a=0;
+    int b=0;
+    int c=0;
+    long na=0;
+    long nb=0;
+    long nc=0;
+    long nd=0;
+    printf("请输入内容(按ctrl+z结束):\n");
+    while((a=getchar())!=EOF){
+        if(a==' '){
+            printf("[空格]");
+            ++nb;
+        }
+        if(a=='\t'){
+            printf("\\t");
+            ++nc;
+        }
+        if(a=='\n'){
+            printf("\\n");
+            ++nd;
+        }
+        else{
+            putchar(a);
+        }
+        ++na;
+        b=na-(nb+nc+nd);
+
+    }
+    printf("\n总共输入了%ld个字符,其中纯文本为%d个字符,空格为%ld个字符,制表符为%ld个字符,换行符为%d个字符。\n",na,b,nb,nc,nd);
     return 0;
 }
