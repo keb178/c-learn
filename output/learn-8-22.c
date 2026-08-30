@@ -511,6 +511,120 @@ while (getchar() !=EOF)
 
     return 0;
 }*/
+/*#include <stdio.h>
+int main()
+{
+double nc;
+for (nc=0;getchar()!=EOF;++nc)
+;
+printf("%.0f\n",nc);
+
+    return 0;
+}
+#include <stdio.h>
+int main()
+{
+long nc;
+nc=0;
+while(getchar() !=EOF)
+++nc;
+printf("%ld\n",nc);
+
+
+    return 0;
+}*/
+/*#include <stdio.h>
+int main()
+{
+int c;
+long nc=0;
+
+c=getchar();
+while(c!=EOF)
+{
+
+    putchar(c);
+    c=getchar();
+    ++nc;
+    printf("\n%ld\n",nc);
+}
+
+
+    return 0;
+}*/
+/*#include <stdio.h>
+int main()
+{
+int c=0;
+long nc=0;
+printf("请输入内容：");
+while((c=getchar())!=EOF)
+{
+    printf("你输入的内容为:");
+    putchar(c);
+    ++nc;
+    printf("\n输入的内容的字数为：%ld\n",nc);
+
+
+}
+
+
+    return 0;
+}*/
+
+/*#include <stdio.h>
+int main()
+{
+int c=0;
+long nc=0;
+printf("请输入内容（按Ctrl+z结束):\n");
+while ((c=getchar()) !=EOF)
+{
+if(c=='\n')
+{
+printf("\\n");
+}
+else{
+putchar(c);
+}
+    putchar(c);
+    printf("第%ld个字符\n",++nc);
+
+}
+printf("\n总共输入了%ld个字符。\n",nc);
+    return 0;
+}*/
 
 
 
+/*#include <stdio.h>
+int main()
+{
+int c=0;
+long nc=0;
+printf("请输入内容(按Ctrl+z结束):\n");
+
+while((c=getchar())!=EOF)
+{
+    putchar(c);
+    ++nc;
+}
+printf("\n总共输入了%ld个字符。\n",nc);
+
+
+    return 0;
+}*/
+
+
+
+//1.5.3 行计数
+#include <stdio.h>
+int main(){
+    int c,nl;
+    nl=0;
+    while((c=getchar())!=EOF)
+    if (c=='\n')
+    ++nl;
+    printf("%d\n",nl);
+    return 0;
+}
