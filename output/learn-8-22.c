@@ -632,7 +632,7 @@ int main(){
 
 
 //练习1-8：
-#include <stdio.h>
+/*#include <stdio.h>
 int main(){
     int a=0;
     int b=0;
@@ -657,11 +657,27 @@ int main(){
         }
         else{
             putchar(a);
+            
         }
         ++na;
         b=na-(nb+nc+nd);
 
     }
-    printf("\n总共输入了%ld个字符,其中纯文本为%d个字符,空格为%ld个字符,制表符为%ld个字符,换行符为%d个字符。\n",na,b,nb,nc,nd);
+    printf("\n总共输入了%ld个字符,其中纯文本为%ld个字符,空格为%ld个字符,制表符为%ld个字符,换行符为%ld个字符。\n",na,b,nb,nc,nd);
+    return 0;
+}
+*/
+
+
+//练习1-9
+#include <stdio.h>
+int main(){
+    int a=0;
+    int b=0;
+    int c=0;
+    printf("请输入内容：\n");
+    while((a=getchar())!=EOF){
+        
+    }
     return 0;
 }
