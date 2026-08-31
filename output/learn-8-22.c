@@ -670,14 +670,104 @@ int main(){
 
 
 //练习1-9
-#include <stdio.h>
+/*#include <stdio.h>
 int main(){
     int a=0;
     int b=0;
     int c=0;
+    long nb=0;
     printf("请输入内容：\n");
     while((a=getchar())!=EOF){
-        
+      if(a==' '){
+        ++nb;
+        printf("当前的空格数：%ld\n",nb);
+        while(++nb>=2){
+            
+        }
+      }
+
+      }  
     }
     return 0;
-}
+}*/
+/*#include <stdio.h>
+int main(){
+    int c=0;
+    int nc=0;
+    printf("请输入内容:\n");
+    while((c=getchar())!=EOF){
+        if(c==' '){
+            if(nc!=' '){
+                putchar(c);
+            }
+        }
+        else{
+            putchar(c);
+        }
+        nc=c;
+    }
+
+    return 0;
+}*/
+
+
+//练习1-10
+/*#include <stdio.h>
+int main(){
+    int c=0;
+
+    //pritnf("请输入内容：\n");
+    printf("请输入内容：\n");
+    while((c=getchar())!=EOF){
+        if(c=='\t'){
+            //c='\t';
+            printf("\\t");
+
+        }
+        //if(c=='\b')
+        else if(c=='\b'){
+            //c='\b';
+            printf("\\b");
+
+        }
+        //if(c=='\\')
+        else if(c=='\\'){
+            //c='\\';
+            printf("\\\\");
+
+            }
+        //putout(c);
+        else{
+        putchar(c);
+    }
+    }
+    return 0;
+
+}*/
+
+
+
+//1.5.4 单词计数
+#include <stdio.h>
+#define IN 1
+#define OUT 0
+//count lines,words,and characters in input
+/*int main(){
+    int c,nl,nw,nc,state;
+
+    state=OUT;
+    nl=nw=nc=0;
+    while((c=getchar())!=EOF){
+        ++nc;
+        if (c=='\n')
+        ++nl;
+        if(c==' '||c=='\n'||c=='\t')
+        state=OUT;
+        else if(state==OUT){
+            state=IN;
+            ++nw;
+        }
+    }
+    printf("%d %d\n",nl,nw,nc);
+    return 0;
+}*/
