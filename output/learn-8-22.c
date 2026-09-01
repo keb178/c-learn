@@ -807,14 +807,45 @@ int main()
     //getchar();
     return 0;
 }*/
-#include <stdio.h>
+/*#include <stdio.h>
 int main()
 {
     int doors;
     doors=5;
     int dogs;
     dogs=3;
+
+    return 0;
+}*/
+
+
+/*#include <stdio.h>
+int main()
+{
+    int feet,fathoms;
+
+    fathoms=1;
+    feet=6*fathoms;
+    printf("Therer are %d feet in %d fathoms!\n",feet,fathoms);
+
+
+    return 0;
+}*/
+
+
+//2.5 进一步使用c
+#include <stdio.h>
+int main()
+{
+    int feet,fathoms;
+
+    fathoms=2;
+    feet=6*fathoms;
+    printf("There are %d feet in %d fathoms!\n",feet,fathoms);
+    printf("Yes,I said %d feet !\n",6*fathoms);
     
+
+
     return 0;
 }
 
