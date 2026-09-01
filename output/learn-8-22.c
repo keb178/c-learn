@@ -771,3 +771,51 @@ int main(){
     printf("%d %d\n",nl,nw,nc);
     return 0;
 }*/
+
+
+
+///换书了
+/*#include <stdio.h>
+int main()
+{
+    int a=0;
+    double b=0;
+    printf("请输入你的尺寸:\n");
+    scanf("%d",&a);
+    b=a*2.54;
+    printf("转换为厘米后：%3.3f\n",b);
+
+
+    return 0;
+}
+*/
+
+
+
+//2.1简单的c程序实例
+/*#include <stdio.h>
+int main()
+{
+    int num;
+    num=1;
+    printf("I am a simple");
+    printf("computer\n");
+    printf("My favorite number is %d because it is first.\n",num);
+
+
+
+    //getchar();
+    return 0;
+}*/
+#include <stdio.h>
+int main()
+{
+    int doors;
+    doors=5;
+    int dogs;
+    dogs=3;
+    
+    return 0;
+}
+
+
