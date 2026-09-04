@@ -834,7 +834,7 @@ int main()
 
 
 //2.5 进一步使用c
-#include <stdio.h>
+/*#include <stdio.h>
 int main()
 {
     int feet,fathoms;
@@ -846,6 +846,238 @@ int main()
 
 
     return 0;
-}
-//你好
+}*/
 
+
+
+/*#include <stdio.h>
+void butler(void);
+int main(void)
+{
+    printf("I will summon the butler function.\n");
+    butler();
+    printf("Yes,Bring me some tea and writeable DVDs.\n");
+
+
+
+    return 0;
+}
+void butler(void)
+{
+
+    printf("You rang,sir?\n");
+}
+*/
+
+
+
+/*#include <stdio.h>
+int main(void)
+{
+    //int n,int n2,int n3;
+    int n,n2,n3;
+
+    n=5;
+    n2=n*n;
+    n3=n2*n2;
+    printf("n=%d,n squared =%d,n cubed = %d\n",n,n2,n3);
+
+
+
+    return 0;
+}*/
+
+
+
+/*#include <stdio.h>
+int main()
+{
+    int n,n2,n3;
+    n=5;
+    n2=n*n;
+    n3=n2*n2;
+    printf("n=%d,n squared=%d,n cubed=%d\n",n,n2,n3);
+
+
+    return 0;
+}*/
+
+
+/*#include <stdio.h>
+int main()
+{
+    int a='Gustav';
+    int b='Mahler';
+    printf("%d %d",a,b);
+    printf("%d\n%d",a,b);
+    printf("%d",a);printf("%d",b);
+
+    return 0;
+}
+*/
+
+
+/*#include <stdio.h>
+int main()
+{
+    printf("我的姓名。\n");
+    printf("我的姓\n名.\n");
+    printf("我的姓");printf(" 名。");
+
+
+    return 0;
+}*/
+
+
+/*#include <stdio.h>
+int main()
+{
+    printf("我的姓名和地址。");
+
+
+    return 0;
+}*/
+
+
+/*#include <stdio.h>
+int main()
+{
+    int a=21;
+    int b=a*365;
+    printf("我的年龄：%d岁\n我的目前上线的天数:%d天",a,b);
+
+    return 0;
+}*/
+
+
+/*#include <stdio.h>
+void jolly(void);
+void deny(void);
+
+int main()
+{
+    jolly();
+    jolly();
+    jolly();
+   deny();
+
+
+    return 0;
+}
+void jolly(void)
+{
+    printf("For he's a jolly good fellow!\n");
+}
+void deny(void)
+{
+     printf("Which nobody can deny!\n");
+}
+
+
+#include <stdio.h>
+void br(void);
+void ic(void);
+
+int main()
+{
+    br();
+    printf(",");
+    ic();
+    printf("\n");
+
+    ic();
+    printf("\n");
+    br();
+
+
+    return 0;
+}
+void br(void)
+{
+    printf("Brazil,Russia");
+}
+void ic(void)
+{
+    printf("India,China");
+}
+
+#include <stdio.h>
+int main()
+{
+    int toes=10;
+    int a=toes*2;
+    int b=toes*toes;
+    printf("toes的值:\t%3.d,\n它的两倍值:\t%3.d,\n它的平方:\t%3.d\n",toes,a,b);
+
+    return 0;
+}
+
+
+
+#include <stdio.h>
+void s(void);
+
+int main()
+{
+    s();
+    s();
+    s();
+    printf("\n");
+    s();
+    s();
+    printf("\n");
+    s();
+
+    return 0;
+}
+
+void s(void)
+{
+    printf("Smile!");
+}
+
+
+#include <stdio.h>
+void one_three(void);
+void two(void);
+
+int main()
+{
+    printf("starting now:\n");
+    one_three();
+    printf("three\n");
+    printf("done!");
+    return 0;
+}
+void one_three(void)
+{
+    printf("one\n");
+    two();
+}
+void two(void)
+{
+    printf("two\n");
+}*/
+
+
+//第三章
+#include <stdio.h>
+int main()
+{
+    float weight;//你的体重（磅）
+    float value;//同等重量的白金价值
+
+    printf("Are you worth your weight in platinum?\n");//你的体重值多少白金
+    printf("Let's check it out.\n");//让我们来算一算
+    printf("Please enter your weight in pounds:");//请输入你的体重（磅）
+
+    scanf("%f",&weight);
+//假设白金价格为每盎司1700美元，1磅=14.5833金衡盎司
+    value=1700.0*weight*14.5833;
+    printf("You weight in platinum is worth $%.2f.\n",value);
+    printf("You are easily worth that! If platinum prices drop,\n");
+    printf("eat more to maintain your value.\n");
+
+
+    return 0;
+}
