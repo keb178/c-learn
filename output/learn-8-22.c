@@ -1061,7 +1061,7 @@ void two(void)
 
 
 //第三章
-#include <stdio.h>
+/*#include <stdio.h>
 int main()
 {
     float weight;//你的体重（磅）
@@ -1074,10 +1074,41 @@ int main()
     scanf("%f",&weight);
 //假设白金价格为每盎司1700美元，1磅=14.5833金衡盎司
     value=1700.0*weight*14.5833;
-    printf("You weight in platinum is worth $%.2f.\n",value);
-    printf("You are easily worth that! If platinum prices drop,\n");
-    printf("eat more to maintain your value.\n");
+    printf("You weight in platinum is worth $%.2f.\n",value);//你的体重等值的白金价值
+    printf("You are easily worth that! If platinum prices drop,\n");//你当然值这个价！如果白金价格下跌
+    printf("eat more to maintain your value.\n");//多吃点来保持你的价格
 
 
     return 0;
 }
+
+
+#include <stdio.h>
+int main()
+{
+    float weight;
+    float value;
+    float a=0;
+
+    printf("你的体重值多少白金？\n");
+    printf("让我们算一算.\n");
+    printf("请输入你的体重（公斤）：");
+
+    scanf("%f",&a);
+    weight=a*2.20462;
+    printf("你的体重（磅）为：%f磅\n",weight);
+    value=1700.0*weight*14.5833;
+    printf("你当然等值的白金的价格为%.2f$.\n",value);
+    printf("你当然值这个价格!当然前提是白金的价格不下降，\n");
+    printf("多吃点来保持你的价格.\n");
+    getchar();
+    getchar();
+
+
+
+    return 0;
+}*/
+
+//3.11 程序中的新元素
+//3.3 数据：数据类型关键字：
+
