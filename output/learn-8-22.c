@@ -1112,3 +1112,125 @@ int main()
 //3.11 程序中的新元素
 //3.3 数据：数据类型关键字：
 
+/*#include <stdio.h>
+int main(void)
+{
+    int ten =10;
+    int two=2;
+
+    printf("Doing it right:");
+    printf("%d minus %d is %d\n",ten,2,ten-two);
+    printf("Doing it wrong:");
+   
+
+
+
+    return 0;
+}*/
+
+
+
+/*#include <stdio.h>
+int main()
+{
+    int x=100;
+
+    printf("dec=%d;octal=%o;hex=%x\n",x,x,x);
+    printf("dec=%d;octal=%#o;hex=%#x\n",x,x,x);
+
+
+
+    return 0;
+}
+*/
+
+
+
+/*#include <stdio.h>
+int main()
+{
+    int i=2147483647;
+    unsigned int j=4294967295;
+    printf("%d %d %d\n"),i,i+1,i+2;
+    printf("%u %u %u\n",j,j+1,j+2);
+
+
+
+    return 0;
+}
+
+
+#include <stdio.h>
+int main()
+{
+    unsigned int un=3000000000;
+    short end=200;
+    long big =65537;
+    long long verybig=12345678908642;
+
+    printf("un = %u and not %d\n",un,un);
+    printf("end =%hd and %d\n",end,end);
+    printf("big =%ld and not %hd\n",big,big);
+    printf("verybig=%lld and not not %ld\n",verybig,verybig);
+
+
+    return 0;
+}
+
+
+#include <stdio.h>
+int main()
+{
+    int i = 2147483647;      // int能存的最大值
+    unsigned int u = 4294967295U; // unsigned能存的最大值
+
+    printf("int最大值: %d\n", i);
+    printf("int最大值 + 1: %d\n", i + 1); // 这里会瞬间变成负数（溢出）
+    
+    printf("unsigned最大值: %u\n", u);
+    printf("unsigned最大值 + 1: %u\n", u + 1); // 这里会瞬间变成0（归零）
+    return 0;
+}
+
+
+#include <stdio.h>
+int main()
+{
+    int a=0;
+    a=65;
+    printf("%c\t%d",a,a);
+
+
+
+    return 0;
+}
+
+
+
+#include <stdio.h>
+int main()
+{
+    printf("\a");
+    printf("\f");
+    printf("\v");
+    printf("你好，\v你好，\t你好nihao，我很好\f你怎么样");
+    printf("\n\n\n");
+    printf("Hello!\007\n");
+
+    return 0;
+}*/
+
+
+
+#include <stdio.h>
+int main()
+{
+    char ch;
+
+    printf("Please enter a character .\n");
+    scanf("%c",&ch);
+    printf("The code for %c is %d .\n",ch,ch);
+    
+
+    return 0;
+}
