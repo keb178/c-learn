@@ -62,7 +62,7 @@ int main()
     return 0;
 }
 
-*/
+
 #include <stdio.h>
 int main()
 {
@@ -74,3 +74,57 @@ int main()
     return 0;
 }
 
+
+
+
+#include <stdio.h>
+int main()
+{
+    int a=0;
+    int b=1;
+    long c=2;
+    printf("%d\n%ld\n",a,c,b);
+
+
+    return 0;
+}
+
+
+#include <stdio.h>
+int main()
+{
+    int ten=10;
+    int two=2;
+    printf("Doing it right:");
+    printf("%d minus %d is %d\n",ten,2,ten-two);
+    printf("Doing it wrong:");
+    printf("%d minus %d is %d\n",ten);//遗漏两个参数
+
+    return 0;
+}
+
+
+
+//以十进制，八进制，十六进制打印十进制整数100
+#include <stdio.h>
+int main()
+{
+    int x=100;
+    printf("dec=%d;octal=%o;hex=%x\n",x,x,x);
+    printf("dec=%d;octal=%#o;hex=%#x\n",x,x,x);
+
+
+    return 0;
+}*/
+
+
+#include <stdio.h>
+int main()
+{
+    int x=10;
+    printf("八进制：%o;十六进制(小写版本):%x;十六进制(大写版本):%X;十进制：%d\n",x,x,x,x);
+    printf("对应的带前缀格式：%#o;%#x;%#X;%d\n",x,x,x,x);
+
+
+    return 0;
+}
